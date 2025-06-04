@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+    string any;
+
     int amount = 0;
     int choice;
 
@@ -42,6 +44,8 @@ int main()
                 else {
                     cout<<"\n\n Sorry, only "<<NumOfCereal - SoldCereal<<" bowls of cereal remaining";
                 }
+                cout<<"\n\n Press c key to continue ";
+                cin>>any;
                 break;
             case 2:
                 cout<<"\n\n Enter the number of pizzas you are ordering: ";
@@ -56,6 +60,8 @@ int main()
                 else {
                     cout<<"\n\n Sorry, only "<<NumOfPizza - SoldPizza<<" pizzas remaining";
                 }
+                cout<<"\n\n Press c key to continue ";
+                cin>>any;
                 break;
             case 3:
                 cout<<"\n\n Enter the number of fish you are ordering: ";
@@ -70,6 +76,8 @@ int main()
                 else {
                     cout<<"\n\n Sorry, only "<<NumOfFish - SoldFish<<" fish remaining";
                 }
+                cout<<"\n\n Press c key to continue ";
+                cin>>any;
                 break;
             case 4:
                 cout<<"\n\n Enter the number of turkey you are ordering: ";
@@ -84,6 +92,8 @@ int main()
                 else {
                     cout<<"\n\n Sorry, only "<<NumOfTurkey - SoldTurkey<<" turkey remaining";
                 }
+                cout<<"\n\n Press c key to continue ";
+                cin>>any;
                 break;
             case 5:
                 cout<<"\n\n Enter the number of chicken you are ordering: ";
@@ -98,6 +108,8 @@ int main()
                 else {
                     cout<<"\n\n Sorry, only "<<NumOfChicken - SoldChicken<<" chicken remaining";
                 }
+                cout<<"\n\n Press c key to continue ";
+                cin>>any;
                 break;
             case 6:
                 cout<<"\n\n Enter the number of mash you are ordering: ";
@@ -112,6 +124,8 @@ int main()
                 else {
                     cout<<"\n\n Sorry, only "<<NumOfMash - SoldMash<<" mash remaining";
                 }
+                cout<<"\n\n Press c key to continue ";
+                cin>>any;
                 break;
             case 7:
                 if (TotalCereal != 0) {
@@ -137,6 +151,8 @@ int main()
                 } else {
                      cout<<"\n\n You haven't ordered anything yet";
                 }
+                cout<<"\n\n Press c key to continue ";
+                cin>>any;
                 break;
             case 8:
                 exit(0);
