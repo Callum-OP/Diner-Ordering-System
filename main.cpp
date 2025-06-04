@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int amount;
+    int amount = 0;
     int choice;
 
     int NumOfCereal = 21, SoldCereal = 0, TotalCereal = 0;
@@ -22,7 +22,8 @@ int main()
         cout<<"\n 4: Turkey";
         cout<<"\n 5: Chicken";
         cout<<"\n 6: Mash";
-        cout<<"\n 7: Exit";
+        cout<<"\n 7: Review Order Details";
+        cout<<"\n 8: Exit";
 
         cout<<"\n Enter your choice (by selecting the number of your order): ";
         cin>>choice;
@@ -102,7 +103,7 @@ int main()
                 cout<<"\n\n Enter the number of mash you are ordering: ";
                 cin>>amount;
 
-                // If chicken is in stock
+                // If mash is in stock
                 if (NumOfMash - SoldMash >= amount) {
                     SoldMash = SoldMash + amount;
                     TotalMash = TotalMash + amount*18; // Costs £6 per mash
@@ -113,6 +114,31 @@ int main()
                 }
                 break;
             case 7:
+                if (TotalCereal != 0) {
+                    cout<<"\n You have ordered "<<SoldCereal<<" bowls of cereal, costing "<<TotalCereal;
+                }
+                if (TotalPizza != 0) {
+                    cout<<"\n You have ordered "<<SoldPizza<<" pizzas, costing "<<TotalPizza;
+                }
+                if (TotalFish != 0) {
+                    cout<<"\n You have ordered "<<SoldFish<<" fish, costing "<<TotalFish;
+                }
+                if (TotalTurkey != 0) {
+                    cout<<"\n You have ordered "<<SoldTurkey<<" turkey, costing "<<TotalTurkey;
+                }
+                if (TotalChicken != 0) {
+                    cout<<"\n You have ordered "<<SoldChicken<<" chicken, costing "<<TotalChicken;
+                }
+                if (TotalMash != 0) {
+                    cout<<"\n You have ordered "<<SoldMash<<" mash, costing "<<TotalMash;
+                }
+                if (TotalCereal + TotalPizza + TotalFish + TotalTurkey + TotalChicken + TotalMash != 0) {
+                    cout<<"\n\n Total cost: "<<TotalCereal + TotalPizza + TotalFish + TotalTurkey + TotalChicken + TotalMash;
+                } else {
+                     cout<<"\n\n You haven't ordered anything yet";
+                }
+                break;
+            case 8:
                 exit(0);
                 return 0;
             default:
