@@ -1,0 +1,6 @@
+
+ 6 bowls of cereal, 30
+ 3 fish: 45
+ 5 mash: 90
+
+ Total cost: 165
